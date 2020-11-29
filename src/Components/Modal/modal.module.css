@@ -1,0 +1,23 @@
+.close {
+  position: absolute;
+  right: 0.8rem;
+  top: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.title {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.content {
+  margin: 2rem;
+}

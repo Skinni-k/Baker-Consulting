@@ -1,0 +1,13 @@
+.tostify {
+  position: fixed;
+  left: 2%;
+  bottom: 5%;
+  height: 50px;
+  width: 200px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 20px;
+}

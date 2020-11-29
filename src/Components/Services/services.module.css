@@ -1,0 +1,18 @@
+.section {
+  min-height: 50vh;
+  background-color: #edf4f2;
+  overflow: auto;
+}
+
+.title {
+  margin: 3.5rem auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}

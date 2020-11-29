@@ -1,0 +1,21 @@
+.bubble {
+  width: 350px;
+  background-color: lightcyan;
+  overflow: auto;
+  border-radius: 20px;
+}
+
+.content {
+  margin: 3rem 1.5rem;
+}
+
+.content::before {
+  content: url(../../Assets/doubleQuote.png);
+  margin-right: 0.6rem;
+}
+
+@media (max-width: 375px) {
+  .bubble {
+    width: 300px;
+  }
+}

@@ -1,0 +1,43 @@
+.card {
+  height: 35rem;
+  width: 25rem;
+  margin: 2rem;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 15px 15px grey;
+  transform: scale(1.01);
+}
+
+.image {
+  height: 15rem;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contentContainer {
+  height: 17rem;
+  overflow: hidden;
+}
+
+.content {
+  margin: 1rem 3rem;
+}
+
+.readMore {
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: larger;
+  font-weight: bold;
+  color: blue;
+}
