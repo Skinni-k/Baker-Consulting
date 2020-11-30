@@ -19,6 +19,7 @@
   margin-top: 5rem;
   font-size: 3rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .subTitle {
@@ -80,6 +81,11 @@
   padding: 0.8rem 2rem;
 }
 
+.spinner {
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
 .button:hover {
   background-color: #000;
   color: white;
@@ -88,10 +94,7 @@
 .button:disabled,
 .button[disabled],
 .button[disabled]:hover {
-  background-color: #cccccc;
-  color: #666666;
   cursor: default;
-  text-decoration: line-through;
 }
 
 @media (max-width: 1023px) {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Tostify from '../Tostify';
 import styles from './contact.module.css';
+import spinner from '../../Assets/spinner.gif';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -58,7 +59,7 @@ const Contact = () => {
             />
             <input
               type="tel"
-              placeholder="Contact Number*"
+              placeholder="Enter 10-digit Number*"
               className={styles.input}
               pattern="[0-9]{10}"
               value={number}
@@ -75,13 +76,17 @@ const Contact = () => {
               required
             />
           </div>
-          <button
-            className={styles.button}
-            type="submit"
-            disabled={disableButton}
-          >
-            Submit
-          </button>
+          {disableButton ? (
+            <img className={styles.spinner} src={spinner} alt="spinner" />
+          ) : (
+            <button
+              className={styles.button}
+              type="submit"
+              disabled={disableButton}
+            >
+              Submit
+            </button>
+          )}
         </form>
       </div>
       {tostify === true ? (

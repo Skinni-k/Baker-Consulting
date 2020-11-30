@@ -30,6 +30,10 @@ textarea {
   font-weight: bold;
 }
 
+a {
+  display: block;
+}
+
 a:hover {
   cursor: pointer;
   height: 100%;
