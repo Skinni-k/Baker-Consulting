@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className={styles.navContent}>
         <h2 className={styles.navLogo} onClick={scrollToHome}>
           {' '}
-          BAKER CONSULTING INC.
+          BCI
         </h2>
         <ul className={styles.navItems}>
           <li className={styles.navItem}>

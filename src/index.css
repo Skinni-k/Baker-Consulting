@@ -30,6 +30,10 @@ textarea {
   font-weight: bold;
 }
 
+.removeBg {
+  background-color: transparent;
+}
+
 a {
   display: block;
 }

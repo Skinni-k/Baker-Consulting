@@ -6,9 +6,13 @@ const Introduction = () => {
   return (
     <section id="section1" className={styles.section}>
       <div className={styles.container}>
-        <p className={styles.title}>GROWING YOUR BUSINESS</p>
+        <div style={{ textAlign: 'center' }}>
+          <span className={styles.title}>baker consulting inc.</span>
+        </div>
       </div>
-      <Arrow />
+      <div className={styles.arrowContainer}>
+        <Arrow />
+      </div>
     </section>
   );
 };

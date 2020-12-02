@@ -1,12 +1,12 @@
 .section {
   min-height: 100vh;
-  background: url(../../Assets/bgTree.jpg) no-repeat center center;
+  background: url(../../Assets/contact_us.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .container {
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
   min-height: 100vh;

@@ -1,0 +1,36 @@
+.container {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1rem;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.emailIcon {
+  height: 50px;
+  width: 50px;
+}
+
+.whatsapp {
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #25d366;
+  outline: none;
+  border: none;
+  height: 45px;
+  width: 45px;
+}
+
+.whatsappIcon {
+  height: 45px;
+  width: 45px;
+}
+
+@media (max-width: 920px) {
+  .container {
+    align-items: center;
+    right: 1.5rem;
+    bottom: 1rem;
+  }
+}

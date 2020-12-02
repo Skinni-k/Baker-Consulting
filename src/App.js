@@ -4,7 +4,7 @@ import Introduction from './Components/Introduction';
 import Services from './Components/Services';
 import Testimonials from './Components/Testimonials';
 import Contact from './Components/Contact Us';
-import WhatsApp from './Components/WhatsApp';
+import FloatingIcons from './Components/Floating Icons';
 
 class App extends Component {
   render() {
@@ -15,11 +15,10 @@ class App extends Component {
         <Services />
         <Testimonials />
         <Contact />
-        <WhatsApp />
+        <FloatingIcons />
       </div>
     );
   }
 }
 
 export default App;
-// id="section3"
