@@ -8,15 +8,15 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
   const [message, setMessage] = useState('');
-  const [disableButton, setDisableButton] = useState(false);
+  const [disable, setDisable] = useState(false);
   const [tostify, setTostify] = useState(false);
   const [tostifyContent, setTostifyContent] = useState({});
 
   const formSubmit = (e) => {
     e.preventDefault();
-    setDisableButton(true);
+    setDisable(true);
     setTimeout(() => {
-      setDisableButton(false);
+      setDisable(false);
       setTostifyContent({
         color: '#25D366',
         text: 'Success!',
@@ -47,6 +47,7 @@ const Contact = () => {
               className={styles.input}
               value={name}
               onChange={(e) => setName(e.target.value)}
+              disabled={disable}
               required
             />
             <input
@@ -55,6 +56,7 @@ const Contact = () => {
               className={styles.input}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              disabled={disable}
               required
             />
             <input
@@ -64,6 +66,7 @@ const Contact = () => {
               pattern="[0-9]{10}"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
+              disabled={disable}
               required
             />
           </div>
@@ -73,17 +76,14 @@ const Contact = () => {
               className={styles.messageInput}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              disabled={disable}
               required
             />
           </div>
-          {disableButton ? (
+          {disable ? (
             <img className={styles.spinner} src={spinner} alt="spinner" />
           ) : (
-            <button
-              className={styles.button}
-              type="submit"
-              disabled={disableButton}
-            >
+            <button className={styles.button} type="submit" disabled={disable}>
               Submit
             </button>
           )}

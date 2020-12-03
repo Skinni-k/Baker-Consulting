@@ -46,7 +46,6 @@ a:hover {
 
 @media (max-width: 919px) {
   a {
-    padding: 1rem;
     display: block;
   }
 }

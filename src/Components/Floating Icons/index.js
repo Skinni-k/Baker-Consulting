@@ -16,7 +16,9 @@ const GmailLogo = () => {
         offset={-70}
         duration={500}
       >
-        <img className={styles.emailIcon} src={Gmail} alt="gmail" />
+        <div className={styles.email}>
+          <img className={styles.emailIcon} src={Gmail} alt="gmail" />
+        </div>
       </Link>
       <ReactWhatsapp number="+17807991439" className={styles.whatsapp}>
         <img src={whatsapp} className={styles.whatsappIcon} alt="whatsapp" />
