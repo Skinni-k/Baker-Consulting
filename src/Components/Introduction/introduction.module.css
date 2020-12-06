@@ -14,11 +14,11 @@
 
 .title {
   font-size: 3.2rem;
-  font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
-  border-bottom: 5px solid #fff;
-  padding-bottom: 3px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  width: 530px;
 }
 
 .arrowContainer {
@@ -31,17 +31,20 @@
 @media (max-width: 650px) {
   .title {
     font-size: 2.2rem;
+    width: 375px;
   }
 }
 
 @media (max-width: 450px) {
   .title {
     font-size: 1.8rem;
+    width: 330px;
   }
 }
 
 @media (max-width: 370px) {
   .title {
     font-size: 1.5rem;
+    width: 250px;
   }
 }

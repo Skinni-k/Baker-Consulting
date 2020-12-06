@@ -12,10 +12,11 @@ const Arrow = () => {
       offset={-70}
       duration={500}
     >
-      {/* <div className={styles.iconScroll} /> */}
-      <div className={styles.chevron} />
-      <div className={styles.chevron} />
-      <div className={styles.chevron} />
+      <div className={styles.chevronContainer}>
+        <div className={styles.chevron} />
+        <div className={styles.chevron} />
+        <div className={styles.chevron} />
+      </div>
     </Link>
   );
 };

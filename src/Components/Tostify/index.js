@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from './tostify.module.css';
 
-const Tostify = ({ color, text }) => {
+const Tostify = ({ tostifyContent }) => {
   return (
-    <div style={{ backgroundColor: color }} className={styles.tostify}>
-      {text}
+    <div
+      style={{ backgroundColor: tostifyContent.color }}
+      className={styles.tostify}
+    >
+      {tostifyContent.text}
     </div>
   );
 };

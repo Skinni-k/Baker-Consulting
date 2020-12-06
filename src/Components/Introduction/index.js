@@ -7,7 +7,7 @@ const Introduction = () => {
     <section id="section1" className={styles.section}>
       <div className={styles.container}>
         <div style={{ textAlign: 'center' }}>
-          <span className={styles.title}>baker consulting inc.</span>
+          <div className={styles.title}>baker consulting inc.</div>
         </div>
       </div>
       <div className={styles.arrowContainer}>

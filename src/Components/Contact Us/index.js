@@ -15,21 +15,52 @@ const Contact = () => {
   const formSubmit = (e) => {
     e.preventDefault();
     setDisable(true);
-    setTimeout(() => {
-      setDisable(false);
-      setTostifyContent({
-        color: '#25D366',
-        text: 'Success!',
+    fetch(
+      'https://fpi150he05.execute-api.ca-central-1.amazonaws.com/dev/sendEmail',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message: `${message}
+My mobile number is: ${number}`,
+        }),
+      }
+    )
+      .then((response) => {
+        if (response.status === 200) {
+          setTostifyContent({
+            color: '#25D366',
+            text: 'Success!',
+          });
+          setTostify(true);
+          setTimeout(() => {
+            setTostify(false);
+          }, 3000);
+        } else {
+          throw 'Error. Request not sent';
+        }
+      })
+      .catch((error) => {
+        setTostify(true);
+        setTostifyContent({
+          color: 'red',
+          text: 'Try Again',
+        });
+        setTimeout(() => {
+          setTostify(false);
+        }, 3000);
+      })
+      .finally(() => {
+        setDisable(false);
+        setName('');
+        setEmail('');
+        setNumber('');
+        setMessage('');
       });
-      setTostify(true);
-      setName('');
-      setEmail('');
-      setNumber('');
-      setMessage('');
-    }, 3000);
-    setTimeout(() => {
-      setTostify(false);
-    }, 5000);
   };
 
   return (
@@ -89,13 +120,7 @@ const Contact = () => {
           )}
         </form>
       </div>
-      {tostify === true ? (
-        <Tostify
-          tostifyContent={tostifyContent}
-          color="#25D366"
-          text="Success"
-        />
-      ) : null}
+      {tostify === true ? <Tostify tostifyContent={tostifyContent} /> : null}
     </section>
   );
 };

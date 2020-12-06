@@ -11,6 +11,8 @@ const Navbar = () => {
 
   const scrollToHome = () => {
     scroll.scrollToTop();
+    setShowMenu(false);
+    setCross(false);
   };
 
   const menuHandle = () => {

@@ -59,13 +59,13 @@
 
 .messageInput {
   height: 104px;
-  width: -webkit-fill-available;
-  margin: 1rem;
+  width: 90%;
   margin-top: 2rem;
   border-radius: 10px;
   outline: none;
   border: none;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .button {
@@ -103,5 +103,27 @@
   }
   .input {
     width: auto;
+  }
+  .button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+@media (min-width: 500px) {
+  .messageInput {
+    width: 93%;
+  }
+}
+
+@media (min-width: 700px) {
+  .messageInput {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .messageInput {
+    width: 97%;
   }
 }
